@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+
+    background-color:faedcd;
+    background-image: url(../images/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.encabezado{
+    background-color: white;
+    height: 200px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+.encabezado nav ul, .pieDePagina nav ul, .pieDePagina1 nav ul {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+}
+.encabezado nav ul li, .pieDePagina nav ul li, .pieDePagina1 nav ul li, .container1, .container {
+    list-style-type: none;
+    margin: 0 20px;
+}
+.encabezado nav ul li a, .pieDePagina nav ul li a, .pieDePagina1 nav ul li a, .container1 a, .container a {
+    text-decoration: none;
+}
+.logo1  {
+   width: 30%;
+  height: 30%;
+}
+.imgcentral { 
+    width:100%;
+    grid-area: "main";
+}
+h1{
+      font-family: 'BhuTuka Expanded One', cursive;
+    font-style: italic;
+    font-weight:normal;
+    text-align: center;
+    color:rgb(100, 41, 102);
+    margin: 5px;
+    padding: 1%;
+}
+.box3{
+    width: 100%;
+    margin:auto;
+}
+.logocentral{
+    display: block;
+    margin: auto;
+}
+
+.descripcion {
+    width: 100%;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 2%;
+    margin:auto;
+    color:rgb(73, 10, 73);
+    grid-area: "main";
+ } 
+.pieDePagina {
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    grid-area: "footer";
+    
+   }
+   .pieDePagina1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    grid-area: "footer";
+   }
+.redes{
+    display: block;
+    margin: auto;
+
+}
+
+.maps {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight:normal;
+    font-size: 30px;
+    text-align: center;
+    color:rgb(100, 41, 102);
+    padding: 1%; 
+}
+.box2{
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+}
+.google{
+    display: block;
+    margin: auto;
+}
+nav{
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(73, 10, 73);
+    text-align:center;
+    word-spacing: 2cm;
+    padding: 2%;
+    margin: 0%;
+}
+nav a{
+    text-decoration: none;
+
+ }
+h2 {
+    font-family:'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color:rgb(73, 10, 73);
+    margin: 1%;
+  }
+
+h3{
+   text-align: center;
+   color: rgb(73, 10, 73);
+   padding: 2%;
+ }
+form{
+    font-size: 20px;
+    text-align: left;
+}
+.productos{
+    font-style: italic;
+    font-weight: bolder;
+    padding: 2%;
+    color:rgb(65, 83, 155);
+}
+.container  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1em;
+    padding: 2%;
+    justify-items: auto;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    padding: 1%;
+    justify-items: auto;
+
+}
+.container1 a {
+    background: violet;
+    padding: 1em;
+}
+.container li{
+    background: violet;
+    padding: 1em;
+}
+.fin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(39, 62, 153);
+    margin: 0%;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight:normal;
+    font-size: 40px;
+    text-align: center;
+    color:rgb(100, 41, 102);
+    padding: 1%; 
+}
+.grid {
+grid-template-columns: auto;
+grid-template-areas: "header" 
+                      "main" 
+                      "footer";
+grid-template-rows: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .grid {
+        background-color: #c5a90a;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+    .grid {
+        background-color: #c50a0a;
+    }  
+    .logo1 {
+        width: 100%;
+        height: 100%;
+    }
+} 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .grid {
+        background-color:green;
+    }
+}
+
+
